@@ -1,0 +1,15 @@
+<section class="blueprint-grid {{ .Site.Params.accentColor | default " bg-pink-50" }} dark:bg-gray-900">
+  <div class="container max-w-screen-lg mx-auto px-6 py-12 grid md:grid-cols-2 gap-4 lg:gap-16 items-center text-line">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">{{ .Site.Params.introTitle | safeHTML}}</h1>
+      <figure>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+          <q>{{ .Site.Params.introSubtitle | safeHTML}}</q>
+        </blockquote>
+        <figcaption>— Martin Fowler</figcaption>
+      </figure>
+      <!-- <q class="font-light text-lg">{{ .Site.Params.introSubtitle | safeHTML}}</q> -->
+    </div>
+    <img class="rounded-lg shadow-sm" src="{{ .Site.Params.introPhoto }}" alt="{{ .Site.Title }}" />
+  </div>
+</section>
